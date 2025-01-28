@@ -1,0 +1,70 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello world!");
+
+        System.out.print("Please enter some inputs: ");
+        Scanner input = new Scanner(System.in);
+
+        int a = input.nextInt();
+        System.out.println(a);
+
+//        String demo = input.next();
+//        System.out.println(demo);
+
+        String demo1 = input.nextLine();
+        System.out.println(demo1);
+
+        float num = input.nextFloat();
+        System.out.println(num);
+
+        double number = input.nextDouble();
+        System.out.println(number);
+
+        char character = input.next().charAt(0);
+        System.out.println(character);
+
+        long longNumber = input.nextLong();
+        System.out.println(longNumber);
+
+        boolean booleanValue = input.nextBoolean();
+        System.out.println(booleanValue);
+
+        //if we want to write numbers like 234,000,000 we can replace , by _
+        int b = 234_000_000;
+        System.out.println(b);
+    }
+}
+
+===================================================================================================
+
+public class Primitive {
+    public static void main(String[] args) {
+        int roll = 34;
+        char letter = 'a';
+        float marks = 96.74f;
+        double num = 45677863784.67684;
+        long number = 2345677876543L;
+        boolean check = true;
+    }
+}
+
+=======================================================================================================
+
+import java.util.Scanner;
+
+public class Sum {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter num1: ");
+        int num1 = input.nextInt();
+        System.out.print("Enter num2: ");
+        int num2 = input.nextInt();
+        int sum = num1 + num2;
+        System.out.println("Sum is: " + sum);
+
+        input.close();
+    }
+}
+
+==========================================================================================================
