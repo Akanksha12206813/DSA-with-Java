@@ -1,0 +1,34 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class MultidimentionalArray {
+    public static void main(String[] args) {
+        int[][] arr = new int[3][2];
+        System.out.println(arr.length);  // no. of rows
+        Scanner input = new Scanner(System.in);
+        // input
+        for (int row = 0; row < arr.length; row++) { // for taking row
+            for (int col = 0; col < arr[row].length; col++) { // for taking column
+                arr[row][col] = input.nextInt();
+            }
+        }
+        // output
+//        for (int row = 0; row < arr.length; row++) {
+//            for (int col = 0; col < arr[row].length; col++) {
+//                System.out.print(arr[row][col] + " ");
+//            }
+//            System.out.println();
+//        }
+
+        // second way
+//        for (int row = 0; row < arr.length; row++) {
+//            System.out.println(Arrays.toString(arr[row]));
+//        }
+
+        // third way
+        for (int[] a : arr){
+            System.out.println(Arrays.toString(a));
+        }
+
+    }
+}
